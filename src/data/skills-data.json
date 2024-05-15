@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "icon-name":"ReactJS",
+        "filepath": "react.png"
+    },
+    {
+        "id": 2,
+        "icon-name":"NodeJS",
+        "filepath": "nodejs.png"
+    },
+    {
+        "id": 7,
+        "icon-name":"MongoDB",
+        "filepath": "mongodb.png"
+    },
+    {
+        "id": 3,
+        "icon-name":"CSS",
+        "filepath": "css.png"
+    },
+    {
+        "id": 4,
+        "icon-name":"Javascript",
+        "filepath": "js.png"
+    },
+    {
+        "id": 5,
+        "icon-name":"Tailwind css",
+        "filepath": "tailwindcss.png"
+    },
+    {
+        "id": 6,
+        "icon-name":"Typescript",
+        "filepath": "typescript.png"
+    },
+    {
+        "id": 8,
+        "icon-name":"Java",
+        "filepath": "java.png"
+    }
+
+]
