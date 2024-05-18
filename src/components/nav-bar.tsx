@@ -6,59 +6,57 @@ import {
   DropdownMenu,
 } from "@/components/ui/dropdown-menu";
 import { ModeToggle } from "./mode-toggle";
-
+import { Link } from "react-scroll";
 export function Navbar() {
   return (
     <>
-      <header className="flex h-16 w-full items-center justify-between px-4 md:px-6 lg:px-8 dark:bg-black dark:text-white">
-        <a className="text-lg font-bold " href="#">
+      <header
+        className="flex h-16 w-full items-center justify-between px-4 md:px-6 lg:px-8 dark:bg-black dark:text-white"
+        id="HOME"
+      >
+        <Link className=" cursor-pointer text-lg font-bold " to="home">
           Dinesh Kumar M
-        </a>
+        </Link>
         <nav className="hidden space-x-4 md:flex">
-          <a className="text-md font-medium hover:underline" href="#">
+          <Link
+            className="cursor-pointer text-md font-medium hover:underline"
+            smooth={true}
+            duration={800}
+            to="hero"
+          >
             Home
-          </a>
-          <a className="text-md font-medium hover:underline" href="#">
-            About
-          </a>
-          <a className="text-md font-medium hover:underline" href="#">
+          </Link>
+          {/* <Link to="/contact" /> */}
+          <Link
+            className="cursor-pointer text-md font-medium hover:underline"
+            smooth={true}
+            duration={800}
+            to="projects"
+          >
             Projects
-          </a>
-          <a className="text-md font-medium hover:underline" href="#">
+          </Link>
+
+          <Link
+            className="cursor-pointer text-md font-medium hover:underline"
+            smooth={true}
+            duration={800}
+            to="resume"
+          >
+            Resume
+          </Link>
+          <Link
+            className="cursor-pointer text-md font-medium hover:underline"
+            smooth={true}
+            duration={800}
+            to="contact"
+          >
             Contact
-          </a>
+          </Link>
           <div className="px-1">
             <ModeToggle />
           </div>
         </nav>
         <div className="flex items-center space-x-2 md:hidden sm:scale-75">
-          {/* <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button size="sm" variant="default">
-                <MoonIcon className="h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem>
-                <Button className="w-full justify-start" variant="ghost">
-                  <SunIcon className="h-4 w-4 mr-2" />
-                  Light
-                </Button>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Button className="w-full justify-start" variant="ghost">
-                  <MoonIcon className="h-4 w-4 mr-2" />
-                  Dark
-                </Button>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Button className="w-full justify-start" variant="ghost">
-                  <MonitorIcon className="h-4 w-4 mr-2" />
-                  System
-                </Button>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu> */}
           <ModeToggle />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -68,28 +66,49 @@ export function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
-                <a className="flex items-center space-x-2" href="#">
+                <Link
+                  className="flex items-center space-x-2"
+                  smooth={true}
+                  duration={700}
+                  to="home"
+                >
                   <HomeIcon className="h-4 w-4" />
                   <span>Home</span>
-                </a>
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <a className="flex items-center space-x-2" href="#">
-                  <UserIcon className="h-4 w-4" />
-                  <span>About</span>
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a className="flex items-center space-x-2" href="#">
+                <Link
+                  className="flex items-center space-x-2"
+                  smooth={true}
+                  duration={700}
+                  to="projects"
+                >
                   <FolderIcon className="h-4 w-4" />
                   <span>Projects</span>
-                </a>
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <a className="flex items-center space-x-2" href="#">
+                <Link
+                  className="flex items-center space-x-2"
+                  smooth={true}
+                  duration={700}
+                  to="resume"
+
+                >
+                  <UserIcon className="h-4 w-4" />
+                  <span>Resume</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  className="flex items-center space-x-2"
+                  smooth={true}
+                  duration={700}
+                  to="contact"
+                >
                   <MailIcon className="h-4 w-4" />
                   <span>Contact</span>
-                </a>
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -132,10 +151,9 @@ export function Navbar() {
   );
 }
 
-interface UserIconProps extends React.SVGProps<SVGSVGElement>{}
+interface UserIconProps extends React.SVGProps<SVGSVGElement> {}
 
-function FolderIcon(props:UserIconProps):JSX.Element
- {
+function FolderIcon(props: UserIconProps): JSX.Element {
   return (
     <svg
       {...props}
@@ -154,7 +172,7 @@ function FolderIcon(props:UserIconProps):JSX.Element
   );
 }
 
-function HomeIcon(props:UserIconProps):JSX.Element {
+function HomeIcon(props: UserIconProps): JSX.Element {
   return (
     <svg
       {...props}
@@ -174,7 +192,7 @@ function HomeIcon(props:UserIconProps):JSX.Element {
   );
 }
 
-function MailIcon(props:UserIconProps):JSX.Element {
+function MailIcon(props: UserIconProps): JSX.Element {
   return (
     <svg
       {...props}
@@ -194,7 +212,7 @@ function MailIcon(props:UserIconProps):JSX.Element {
   );
 }
 
-function MenuIcon(props:UserIconProps):JSX.Element {
+function MenuIcon(props: UserIconProps): JSX.Element {
   return (
     <svg
       {...props}
@@ -282,7 +300,7 @@ function MenuIcon(props:UserIconProps):JSX.Element {
 //   );
 // }
 
-function UserIcon(props:UserIconProps):JSX.Element {
+function UserIcon(props: UserIconProps): JSX.Element {
   return (
     <svg
       {...props}

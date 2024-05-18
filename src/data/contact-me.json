@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "platform":"Gmail",
+        "username":"medinesh.dev@gmail.com",
+        "icon-image":"gmail.png",
+        "account-link":"medinesh.dev@gmail.com"
+    },
+    {
+        "id":2,
+        "platform":"LinkedIn",
+        "username":"@medineshkumarm",
+        "icon-image":"linkedin.png",
+        "account-link":"http://www.linkedin.com/in/medineshkumarm"
+    },
+    {
+        "id":3,
+        "platform":"Instagram",
+        "icon-image":"instagram.png",
+        "username":"@medinesh.dev",
+        "account-link":"http://www.linkedin.com/in/medineshkumarm"
+    }
+]

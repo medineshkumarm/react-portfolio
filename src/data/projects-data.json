@@ -9,24 +9,24 @@
   },
   {
     "id": 2,
-    "title": "Chat Application",
-    "description": "A NEXTJS full chap app with socket io",
+    "title": "XERONE 2k24",
+    "description": "College Symposium with react and shadcnUI",
     "imagesrc": "images.jpg",
-    "livelink": "https://auth-tut-dk.vercel.app/",
-    "repolink": "https://github.com/medineshkumarm"
+    "livelink": "https://xerone.vercel.app/",
+    "repolink": "https://github.com/medineshkumarm/newsympo"
   },
   {
     "id": 3,
     "title": "Chat Application",
-    "description": "A NEXTJS full chap app with socket io",
+    "description": "A NEXTJS full chat app with socket io",
     "imagesrc": "images.jpg",
-    "livelink": "https://auth-tut-dk.vercel.app/",
-    "repolink": "https://github.com/medineshkumarm"
+    "livelink": "https://next-ts-dashboard.vercel.app/",
+    "repolink": "https://github.com/medineshkumarm/realtime-chat-with-websocket"
   },
   {
     "id": 4,
     "title": "Chat Application",
-    "description": "A NEXTJS full chap app with socket io",
+    "description": "A NEXTJS full chat app with socket io",
     "imagesrc": "images.jpg",
     "livelink": "https://auth-tut-dk.vercel.app/",
     "repolink": "https://github.com/medineshkumarm"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Chat Application",
-    "description": "A NEXTJS full chap app with socket io",
+    "description": "A NEXTJS full chat app with socket io",
     "imagesrc": "images.jpg",
     "livelink": "https://auth-tut-dk.vercel.app/",
     "repolink": "https://github.com/medineshkumarm"

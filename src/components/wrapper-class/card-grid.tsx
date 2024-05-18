@@ -21,30 +21,44 @@ export const CardGrid = ({
   ProjectTitle,
   ProjectDescription,
   ProjectImageSrc,
+  liveLink,
+  repoLink,
 }: CardGridProps) => {
+
+  const handleLiveLinkClick = () => {
+    if (liveLink) {
+      window.open(liveLink, '_blank');
+    }
+  };
+
+  const handleGithubClick = () => {
+    if (repoLink) {
+      window.open(repoLink, '_blank');
+    }
+  };
   return (
     <Card className=" mx-auto my-2">
       <CardHeader>
         <CardTitle>{ProjectTitle}</CardTitle>
         <CardDescription>{ProjectDescription}</CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col">
+      <CardContent>
         <img
           src={ProjectImageSrc}
           alt="Project Image"
           className="w-full h-[150px] rounded-md"
         />
-        <Button variant="link" className="underline self-end from-indigo-500 to-purple-500 rounded-lg">
+        {/* <Button variant="link" className="underline self-end from-indigo-500 to-purple-500 rounded-lg">
           Know more
-        </Button>
+        </Button> */}
 
        
       </CardContent>
       <CardFooter>
-        <Button size="default" variant="outline" className="mx-auto">
+        <Button size="default" variant="outline" className="mx-auto" onClick={handleLiveLinkClick}>
           Live Link
         </Button>
-        <Button size="default" variant="outline" className="mx-auto">
+        <Button size="default" variant="outline" className="mx-auto"  onClick={handleGithubClick}>
           <FaGithub className="h-5 w-5 pr-1" />
           Github
         </Button>
