@@ -3,7 +3,7 @@ import data from "@/data/skills-data.json";
 export function SkillBadge() {
   return (
     <>
-      <div className="grid grid-cols-2 mx-[100px] md:grid-cols-4 ">
+      <div className="grid grid-cols-2  md:grid-cols-4 ">
         {data.map((each) => (
           <div
             className="mx-auto py-2 space-x-0 flex flex-col justify-center items-center "

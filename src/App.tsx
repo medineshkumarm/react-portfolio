@@ -12,27 +12,29 @@ import ContactMe from "./pages/contactme-section";
 import Footer from "./pages/footer-section";
 import ResumeSection from "./pages/resume-download";
 import { Element } from "react-scroll";
+import StickyToTopButton from "./components/decor-elements/sticky-button";
 function App() {
   return (
     <>
-        <Element name="hero">
-          <Hero />
-          <SkillSection />
-        </Element>
+      <StickyToTopButton />
+      <Element name="home">
+        <Hero />
+        <SkillSection />
+      </Element>
 
-        <Element name="projects">
-          <ProjectSection />
-        </Element>
+      <Element name="projects">
+        <ProjectSection />
+      </Element>
 
-        <DotBackgroundDemo>
-          <Element name="resume">
-            <ResumeSection />
-          </Element>
-          <Element name="contact">
-            <ContactMe />
-          </Element>
-        </DotBackgroundDemo>
-        <Footer />
+      <DotBackgroundDemo>
+        <Element name="resume">
+          <ResumeSection />
+        </Element>
+        <Element name="contact">
+          <ContactMe />
+        </Element>
+      </DotBackgroundDemo>
+      <Footer />
     </>
   );
 }
